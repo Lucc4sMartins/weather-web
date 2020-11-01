@@ -71,10 +71,10 @@ export function fetchWeather() {
             name: city.name,
             iconUrl: window.URL.createObjectURL(iconBlob),
             windSpeed: city.wind.speed,
-            feelsLike: city.main.feels_like,
-            currentTemp: city.main.temp,
-            maxTemp: city.main.temp_max,
-            minTemp: city.main.temp_min
+            feelsLike: Math.round(city.main.feels_like),
+            currentTemp: Math.round(city.main.temp),
+            maxTemp: Math.round(city.main.temp_max),
+            minTemp: Math.round(city.main.temp_min)
           }
         }))
       } else throw new Error(message)
