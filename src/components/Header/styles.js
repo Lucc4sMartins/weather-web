@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 
 const HeaderContainer = styled.header`
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${({ theme }) => theme.lightColor};
+  min-height: 50px;
 `
 
 const Title = styled.h1`
-  text-transform: uppercase;
+  color: ${({ theme }) => theme.darkerColor};
 `
 
 export {

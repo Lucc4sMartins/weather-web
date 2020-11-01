@@ -10,7 +10,7 @@ const center = {
 
 const containerStyle = {
   width: '100vw',
-  height: '60vh'
+  height: '55vh'
 }
 
 const googleMapsApiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY
