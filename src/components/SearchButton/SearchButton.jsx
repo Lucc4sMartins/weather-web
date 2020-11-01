@@ -7,10 +7,10 @@ import { Spinner } from '../Spinner'
 
 const SearchButton = () => {
   const dispatch = useDispatch()
-  const { lat, lng, weatherLoading } = useSelector(({ location, weather }) => ({
+  const { lat, lng, loading } = useSelector(({ location, weather }) => ({
     lat: location.lat,
     lng: location.lng,
-    weatherLoading: weather.weatherLoading
+    loading: weather.citiesWeatherLoading
   }))
 
   const onSubmit = e => {
@@ -29,7 +29,7 @@ const SearchButton = () => {
   return (
     <form onSubmit={onSubmit}>
       <Styled.Button type='submit'>
-        {weatherLoading ? <Spinner /> : 'Search'}
+        {loading ? <Spinner /> : 'Search'}
       </Styled.Button>
     </form>
   )
