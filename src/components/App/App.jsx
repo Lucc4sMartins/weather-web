@@ -1,10 +1,12 @@
 import React from 'react'
-import * as Styled from './styles'
+import { Provider as ReduxProvider } from 'react-redux'
+import { AppStore } from '@/store/AppStore'
+import GlobalStyle from '@/styles/Global'
 
 const App = () => (
-  <Styled.P>
-    Initial App
-  </Styled.P>
+  <ReduxProvider store={AppStore}>
+    <GlobalStyle />
+  </ReduxProvider>
 )
 
 export { App }
