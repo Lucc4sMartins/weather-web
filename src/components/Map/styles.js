@@ -7,11 +7,11 @@ const Input = styled.input`
   border-radius: 3px;
   font-size: 14px;
   outline: none;
-  border: none;
+  border: ${({ theme }) => `2px solid ${theme.lightColor}`};
   text-overflow: ellipses;
   position: absolute;
   left: 10px;
-  top: 70px;
+  top: 120px;
 `
 
 export { Input }
