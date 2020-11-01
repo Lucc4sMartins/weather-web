@@ -9,6 +9,7 @@ import { Map } from '@/components/Map'
 import { Header } from '@/components/Header'
 import { SearchButton } from '@/components/SearchButton'
 import { CityList } from '@/components/CityList';
+import * as Styled from './styles'
 
 const App = () => (
   <ReduxProvider store={AppStore}>
@@ -16,11 +17,11 @@ const App = () => (
       <ToastContainer />
       <GlobalStyle />
       <Header />
-      <main>
+      <Styled.Main>
         <Map />
         <SearchButton />
         <CityList />
-      </main>
+      </Styled.Main>
     </StyledProvider>
   </ReduxProvider>
 )

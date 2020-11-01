@@ -1,10 +1,9 @@
 import styled from 'styled-components'
 
-const P = styled.p`
-  text-transform: uppercase;
-  font-weight: bold;
+const Main = styled.main`
+  margin-top: 50px;
 `
 
 export {
-  P
+  Main
 }
