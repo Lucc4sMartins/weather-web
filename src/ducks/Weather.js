@@ -55,7 +55,7 @@ export function fetchWeather() {
       const { location: { lat, lng } } = getState()
 
       const res = await fetch(
-        ` http://api.openweathermap.org/data/2.5/find?units=metric&lat=${lat}&lon=${lng}&cnt=15&APPID=${openWeatherApiKey}`
+        ` https://api.openweathermap.org/data/2.5/find?units=metric&lat=${lat}&lon=${lng}&cnt=15&APPID=${openWeatherApiKey}`
       )
 
       let { list, message } = await res.json()
