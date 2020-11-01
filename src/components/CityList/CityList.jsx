@@ -57,7 +57,7 @@ const CityList = () => {
                 </Styled.MoreInfoWrapper>
                 <Styled.MoreInfoWrapper>
                   <Styled.Label>Max {maxTemp}º</Styled.Label>
-                  <Styled.Label>Wind Speed {windSpeed}km/h</Styled.Label>
+                  <Styled.Label>Wind Speed {windSpeed} meter/sec</Styled.Label>
                 </Styled.MoreInfoWrapper>
               </>
             )}
