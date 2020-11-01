@@ -5,8 +5,9 @@ import * as Styled from './styles'
 const CityList = () => {
   const [selectedCities, setSelectedCities] = useState([])
   
-  const { cityList } = useSelector(({ weather }) => ({
-    cityList: weather.citiesWeather
+  const { cityList, error } = useSelector(({ weather }) => ({
+    cityList: weather.citiesWeather,
+    error: weather.citiesWeatherError
   }))
 
   const handleCityClick = id => {
@@ -15,6 +16,10 @@ const CityList = () => {
     } else {
       setSelectedCities([...selectedCities, id])
     }
+  }
+
+  if (error) {
+    return <Styled.ErrorMessage>{error}</Styled.ErrorMessage>
   }
   
   return (

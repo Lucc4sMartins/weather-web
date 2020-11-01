@@ -37,6 +37,12 @@ const MoreInfoWrapper = styled.div`
   justify-content: space-between;
 `
 
+const ErrorMessage = styled.p`
+  text-align: center;
+  margin: 10px;
+  color: ${({ theme }) => theme.darkColor};
+`
+
 export {
   List,
   ListItem,
@@ -44,5 +50,6 @@ export {
   Label,
   CurrentTempWrapper,
   HeadInformation,
-  MoreInfoWrapper
+  MoreInfoWrapper,
+  ErrorMessage
 }
