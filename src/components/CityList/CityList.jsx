@@ -36,10 +36,9 @@ const CityList = () => {
         return (
           <Styled.ListItem
            onClick={() => handleCityClick(id)}
-           key={`${name}_${index}`}
-           selected={selected}>
+           key={`${name}_${index}`}>
             <Styled.HeadInformation>
-              <Styled.Label>
+              <Styled.Label bold>
                 {name}
               </Styled.Label>
               <Styled.CurrentTempWrapper>

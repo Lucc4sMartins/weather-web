@@ -23,6 +23,7 @@ const Icon = styled.img`
 
 const Label = styled.span`
   color: ${({ theme }) => theme.darkerColor};
+  font-weight: ${props => props.bold ? 'bold' : 'normal'}
 `
 
 const CurrentTempWrapper = styled.div`
