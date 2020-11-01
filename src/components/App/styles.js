@@ -14,7 +14,7 @@ const InformationWrapper = styled.div`
   width: 100%;
 
   @media (min-width: 1024px) {
-    width: 50%;
+    width: 40%;
     max-height: calc(100vh - 50px);
     overflow-y: scroll;
   }
