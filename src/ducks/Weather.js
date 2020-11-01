@@ -62,7 +62,7 @@ export function fetchWeather() {
 
       if (list) {
         list = await Promise.all(list.map(async city => {
-          const iconUrl = `http://openweathermap.org/img/wn/${city.weather[0].icon}@2x.png`
+          const iconUrl = `https://openweathermap.org/img/wn/${city.weather[0].icon}@2x.png`
           const fetchedIcon = await fetch(iconUrl)
           const iconBlob = await fetchedIcon.blob()
   
