@@ -19,8 +19,10 @@ const App = () => (
       <Header />
       <Styled.Main>
         <Map />
-        <SearchButton />
-        <CityList />
+        <Styled.InformationWrapper>
+          <SearchButton />
+          <CityList />
+        </Styled.InformationWrapper>
       </Styled.Main>
     </StyledProvider>
   </ReduxProvider>

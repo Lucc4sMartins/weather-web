@@ -10,6 +10,11 @@ const Button = styled.button`
   color: ${({ theme }) => theme.lightColor};
   border: none;
   cursor: pointer;
+
+  @media (min-width: 1024px) {
+    margin: 10px;
+    width: calc(100% - 20px);
+  }
 `
 
 export {
