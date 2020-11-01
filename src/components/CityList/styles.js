@@ -4,6 +4,7 @@ const List = styled.ul`
 `
 
 const ListItem = styled.li`
+  cursor: pointer;
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
