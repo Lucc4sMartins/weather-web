@@ -24,7 +24,7 @@ const Map = () => {
   }
 
   const containerStyle = {
-    width: width < 1024 ? '100vw' : '60vw',
+    width: width < 1024 ? '100vw' : '70vw',
     height: width < 1024 ? '55vh' : 'calc(100vh - 50px)'
   }
 
